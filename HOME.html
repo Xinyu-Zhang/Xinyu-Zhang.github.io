@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>RingLord_Home</title>
+	<meta charset="utf-8" />
+
+     <style type="text/css">
+         .body {
+            align-content:center;
+            text-align:left;
+            color:black;
+            margin-left: 120px;
+            margin-right: 0px;
+            width: 926px;
+         }
+        h1 {text-align:center;
+            color:darkblue;
+            font-size:xx-large;
+
+        }
+        .header {
+            text-align:center;
+            color: lightgrey;
+        }
+        h4 {
+            text-align:left;
+            color :darkblue;
+            font-size:x-large;
+            font-weight:bold;
+
+        }
+         h5 {
+             font-size:large;
+             font-weight:bold;
+         }
+         p {             
+            width: 899px;
+         }
+         .image {            
+              width: 1167px;
+         }
+     </style>
+</head>
+<body>
+     <div class =" header">
+        <h1><i><strong>RingLord</strong></i></h1>
+        <h2 style="font-style: normal; font-size: large;">Smoking Behavior Detection Using A Ring-based System</h2>
+        <h3 style="font-style: italic; font-size: x-large; color: #808080;">
+             <a href="Home.html">Our Work</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="Sources.html">Sources</a>
+        </h3>
+    </div>
+
+    <div style="width: 330px; height: 500px; margin-left: 0px; float:right">
+        <br />
+        <img src="1.PNG" alt="1" style="max-width:330px;  margin-top: 39px;" />
+    </div>
+
+
+    <div class =" body" style="width:926px">
+        <h4 >Introduction to Our System</h4>
+        <p><i><strong>Abstract</strong></i><br/>
+        </p>
+        
+        <p>In this project, we propose a Ring-based remote smoking activity monitoring system called RingLord. The system is an end-to-end solution consisting of a wearable sensing system, a smartphone-based gateway and an analytic engine. We imple- mented a prototype system and conducted a clinical trail, from which sensory signals while smoking and non-smoking activities were collected. Based on this dataset, We created 180 features and selected 10 most important ones to fit several classification models. The prediction performances in cross validations showed Random Forest was the best model. The overall approach demonstrated the feasibility and effectiveness of the proposed system.
+            <br/>
+        </p>
+        <p>&nbsp;</p>
+        <p><i><strong>Index Terms</strong></i><br/></p>
+        <p>
+            Mobile health, Smoking detection, Wearable sensor, Remote health monitoring, Machine learning.
+        </p>
+        <p>Cigarette smoking is one of the most pressing health issue aournd the world. According to Centers for Disease Control and Prevention (CDC) smoking causes more than 480,000 deaths each year in the United States.
+            As a mobile health class project, we aimed at exploring a mobile health solution proposal that can intervene the relapse of abstinent smokers in a timely manner. We conceived and implemented a prototype of a Ring- like wearable device (RingLord) that not only can potentially synthesize multiple sensors such as inertial sensors, gas and dust sensors, but also provides considerable convenience of practical use.
+        </p>
+    </div>
+
+        <div class="image">
+        </div>
+
+
+
+
+    <div class =" body">
+        <h4 >System Architecture</h4>
+        <p>
+           RingLord is a three-tier, end-to-end remote monitoring system with extensive hardware and software components. The overall architecture is summarized in following figure. 
+            </p>
+        <p>
+           The first tier, data collection framework makes use of a set of sensing decices to do measurement. 
+            In the second part, the data is processed and transmitted to database. 
+            The last tier is a backend analytics engine capable of continuously generating statistical models and predicting outcomes using various machine learning and data mining algorithms. 
+        </p>
+    </div>
+
+    <div class="image">
+        <img src="2.PNG" alt="2" style="max-width:330px; margin-left:150px; " />
+
+    </div>
+
+
+     <div class =" body">  
+       <h4 >Process Overview</h4>
+         <div>
+             <h5>Collecting Data </h5>
+         </div>
+
+         <div class="image"> <img src="3.PNG" alt="3" style="max-width:330px; margin-left:50px; height: 236px; width: 92px;" /> <img src="4.PNG" alt="4" style="max-width:330px; margin-left:50px; height: 283px; width: 163px;" /><img src="5.PNG" alt="5" style="max-width:330px; margin-left:50px; height: 292px; width: 193px;" /><img src="6.PNG" alt="6" style="max-width:330px; margin-left:51px; height: 339px; width: 450px;" /></div>
+         <div class="image"> &nbsp;</div>
+         <div class="image"> &nbsp;</div>
+         <div class="image"> &nbsp;</div>
+
+         <div>
+             <h5>Feature Extraction</h5>
+         </div>
+        <p>
+          <i> 1) Data Segmentation:</i>
+            </p>
+         <p>
+            By discretizing time series, classification models can be easily fitted to the data.
+            we decided to slice the signals into 4-second long windows, each of which contains 40 data points. And this window width can cover most single smoking activity.
+        </p>
+            <div class="image"> <img src="7.PNG" alt="7" style="max-width:330px; margin-left:77px; height: 287px; width: 367px;" /> </div>
+        <p>
+           <i> 2) Feature Creation: </i>
+       </p>
+         <p>
+            On the sliced data set, we created aggregated features b y window.
+            By considering current window and its leading and lagging windows together, most important signal patterns will be captured rather than be ignored because of window slicing. In total, we generated 180 features.
+       </p>      
+            <div class="image"> <img src="8.PNG" alt="8" style="max-width:330px; margin-left:72px; height: 291px; width: 549px;" /> </div>
+        
+        <p>
+           <i> 3) Feature Selection: </i>
+        </p>
+         <p>
+            Too many features doesn’t necessar- ily lead to good predictive power of classification model. 
+             In order to find those features that contain most information for classification, we employed a tree-based classification model (Gradient Boosting) that identified the relative importance of all features.
+        </p>
+
+          <div class="image"> <img src="9.PNG" alt="9" style="max-width:330px; margin-left:50px; height: 269px; width: 256px;" /> 
+              <img src="10.PNG" alt="10" style="max-width:330px; margin-left:50px; height: 280px; width: 475px;" /></div>
+         <div class="image"> &nbsp;</div>
+        <div class="image"> <img src="11.PNG" alt="11" style=" margin-left:103px; height: 200px; width: 550px;" /> </div>
+
+
+         <div>
+             <h5>Model Training</h5>
+         </div>
+        <p>
+            Data were collected from 2 smokers and 2 non- smokers. To avoid data corruption, we did the experiment in a windless environment. Each tester smoked 3 cigarettes. When there is a hand-to-mouth smoking action, they need to press the ”start” button in the App accordingly to label the data in that time interval. 
+           <br/>
+        </p>
+         <p>
+             We also asked them to walk around and let their arms swing back and forth. Finally, we collected data from similar actions, like drinking, to make the experiment more solid and convincing. With all the collected data, the results are then computed using ten-fold cross validation to guard against overfitting given the relatively small number of instances.
+        <br/>
+        </p>
+         <p>
+            We fitted 4 different classification model to the data set with 10 features: Gradient Boosting Tree, AdaBoost Tree, Random Forest and Support Vector Machines.
+            <br/>
+            Scikit-learn (version 0.17) was used to train the models and make predictions. 
+            10-folded cross validation was used to select parameters of these models.
+           <br/>
+        </p>
+         <p>
+             Limited to time and resource of the class project, the training dataset we got from the clinical trial had only 876 windows and limited number of interfering activity data that help give more credentials to the models’ predicting and dif- ferentiating power. Conducting more systematical experiments and obtaining larger training and test datasets are needed in future work.
+        </p>
+         <div class="image"> <img src="12.PNG" alt="13" style="max-width:330px; margin-left:150px;" /> </div>
+           <div>
+             <h5>Deployment</h5>
+         </div>
+
+         <div class="image"> <img src="13.PNG" alt="13" style="margin-left:48px; height: 225px; width: 750px;" /> </div>
+         <div>
+         <p>
+          <strong>Conculusion</strong>
+            Mobile phones can play a major role in detecting and preventing harmful user behavior, such as smoking. So far, we have introduced the design and implementation of a Ring-based remote smoking monitoring system called
+             RingLord. The system is an end-to-end solution consisting of three parts: 1)a RFduino-based hardware sensing system that can measure and transmit data via Bluetooth 4.0, 2)a smartphone-based gateway that wirelessly collects data sets from the hardware devices and upload them into MySQL database, 3).an analytic engine capable of real-time prediction using machine learning and data mining algorithms.
+             <br/>
+             Using real data collected from a clinical trial, we have demonstrated the effectiveness of RingLords analytic engine by accurately predicting if there is a smoking activity happen- ing. 
+            <br/>
+              But the system still has several limitations. 
+            <br/>
+             One possible direction is to do more clinical trials. Then based on the new data we collect, we can use different data processing and feature extraction methods to do prediction.
+        </p>
+        </div>
+    </div>
+
+    <div class =" body">
+        <h4 >Demo</h4>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FrO5gTIsrrc" frameborder="0" allowfullscreen></ifram></iframe>
+        </div>
+
+
+    </div>
+
+    <div class =" body">
+        <h4  >Reference</h4>
+        <p>
+           1. Rigotti, Nancy A. Strategies to help a smoker who is struggling to quit, JAMA 308 (15): 15731580. doi:10.1001/jama.2012.13043. ISSN 1538- 3598. PMID 23073954. Retrieved 2015-05-09.
+           </p>
+        <p>
+            2. Secker-Walker RH, Gnich W, Platt S, Lancaster T. Community inter- ventions for reducing smoking among adults, Cochrane Database Syst Rev (3): CD001745. doi:10.1002/14651858.CD001745. PMID 12137631. Retrieved 2015-05-09.
+        </p>
+        <p>
+            3. P. Lopez-Meyer, S. Tiffany, Y. Patil and E. Sazonov. Monitoring of Cigarette Smoking Using Wearable Sensors and Support Vector Machines, IEEE Transactions on Biomedical Engineering (Volume:60, Issue: 7). IEEE, July 2013.
+           </p>
+        <p style="font-size: medium; font-style: normal">
+            4. Y. Patil, P. Lopez-Meyer, S. Tiffany, E. Sazonov. Detection of cigarette smoke inhalations from respiratory signals using reduced feature set, Information Processing in Sensor Networks (IPSN), 2012 ACM/IEEE 11th International Conference on IEEE, July 2013.
+        </p>
+        <p style="font-size: medium; font-style: normal">
+            &nbsp;</p>
+        <p style="font-size: medium; font-style: normal">
+            &nbsp;</p>
+        <p style="font-size: medium; font-style: normal">
+            &nbsp;</p>
+        <p style="font-size: medium; font-style: normal">
+            &nbsp;</p>
+
+    </div>
+
+</body>
+</html>
