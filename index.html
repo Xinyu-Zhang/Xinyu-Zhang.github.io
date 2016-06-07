@@ -1,224 +1,233 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>RingLord_Home</title>
-	<meta charset="utf-8" />
 
-     <style type="text/css">
-         .body {
-            align-content:center;
-            text-align:left;
-            color:black;
-            margin-left: 120px;
-            margin-right: 0px;
-            width: 926px;
-         }
-        h1 {text-align:center;
-            color:darkblue;
-            font-size:xx-large;
+	<meta charset="utf-8">
+	<title>349 Machie Learing -- NBA Salary</title>
 
-        }
-        .header {
-            text-align:center;
-            color: lightgrey;
-        }
-        h4 {
-            text-align:left;
-            color :darkblue;
-            font-size:x-large;
-            font-weight:bold;
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!--
 
-        }
-         h5 {
-             font-size:large;
-             font-weight:bold;
-         }
-         p {             
-            width: 899px;
-         }
-         .image {            
-              width: 1167px;
-         }
-     </style>
+Template 2077 Modern Town
+
+http://www.tooplate.com/view/2077-modern-town
+
+-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+   	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	
 </head>
-<body>
-     <div class =" header">
-        <h1><i><strong>RingLord</strong></i></h1>
-        <h2 style="font-style: normal; font-size: large;">Smoking Behavior Detection Using A Ring-based System</h2>
-        <h3 style="font-style: italic; font-size: x-large; color: #808080;">
-             <a href="index.html">Our Work</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <a href="Sources.html">Sources</a>
-        </h3>
-    </div>
-
-    <div style="width: 330px; height: 500px; margin-left: 0px; float:right">
-        <br />
-        <img src="1.jpg" alt="1" style="max-width:330px;  margin-top: 39px;" />
-    </div>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 
-    <div class =" body" style="width:926px">
-        <h4 >Introduction to Our System</h4>
-        <p><i><strong>Abstract</strong></i><br/>
-        </p>
+<!-- Home section
+================================================== -->
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h5 class="wow fadeInDown" data-wow-delay="0.2s">Northwestern University EECS 349 Project</h5>
+				<h1 class="wow fadeInDown">Title</h1>
+				<a href="#about" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.6s">LEARN MORE</a>
+			</div>
+
+		</div>
+	</div>		
+</section>
+
+
+<!-- Navigation section
+================================================== -->
+<section class="navbar navbar-default navbar-fixed-top sticky-navigation" role="navigation">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">NU EECS 349</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right main-navigation">
+				<li><a href="#home" class="smoothScroll">Home</a></li>
+				<li><a href="#testimonial" class="smoothScroll">Team Members</a></li>
+				<li><a href="#about" class="smoothScroll">Extended Abstract</a></li>
+				<li><a href="#fullreport" class="smoothScroll">Full Report</a></li>
+			</ul>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- Team member section
+================================================== -->
+<section id="testimonial" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Service Owl Carousel section
+			================================================== -->
+			<div id="owl-testimonial" class="owl-carousel">
+
+				<div class="item">
+					<div class="row">
+						<div class="col-md-offset-2 col-md-8">
+							<img src="images/XINYU.jpg" class="img-responsive img-circle" alt="testimonial img">
+							<h2>XINYU ZHANG </h2>
+							<p>Email: xinyuzhang2016@u.northwestern.edu</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-md-offset-2 col-md-8">
+							<img src="images/CHENHUI.jpg" class="img-responsive img-circle" alt="testimonial img">
+							<h2>CHENHUI ZHOU</h2>
+							<p>Email: chenhuizhou2016@u.northwestern.edu</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+
+<!-- about section
+================================================== -->
+<section id="about" class="paralla-section">
+	<div class="container">
+		<div class="about-des">
+			<h3>The Problem</h3>
+			<p>In our project, our task is to predict the salary of a certain NBA player in the coming season based on attributes of the player’s stats in the current season, such as accuracy, points per game and so on. More than making prediction, we are able to validate whether a player worth for his salary, or whether a player should get more. The salaries problem is always a popular topic with heated discussion. In NBA history there are several lookout because of salaries problem. If we could evaluate a player's value and predict it for every team it may eliminate the conflict between players and team owners. Also every team could spend useful money to built stronger team. Finally our project may let NBA games be more competive and attractive.</p>
+		</div>
+
+		<div class="about-des">
+			<h3>High Level Solution</h3>
+			<p>
+			At first we process our data we get from internet, we combine different tables together and determine the feature is nominal or numeric. For features whose values are not numeric and not easy for the algorithm to understand. For example, “Position”, we can use numeric to substitute for the original value, so that "SF" will be -2, "PG" will be -1, "C" will be 0, and so on. </p>
+
+			<p>In order to generate the ML models, we use python package  <a rel="nofollow" href="http://scikit-learn.org/stable/" target="_parent">Scikit-Learn</a> trying Random Forest Algorithm, Support Vector Machine, k Nearest Neighbors, Bernoulli Naive Bayes Algorithm, and AdaBoost Algorithm to train the data.</p>
+
+			<p>At the very beginning, we tried to use regression model to do the task, since we thought that predicting salary should output continuous value rather than a certain class. But after tried some algorithms, we found that the performance of the regression model was very awful due to the very high dimension of the input. So that we decided to transfer this regression task to classification task by category the salary to percentage format. For example, in a certain sample, the salary attribute has value as 12,000,000 and the salary cap attribute has value as 60,000,000, then the label of this sample will be 0.20. So that our model is going to predict a approximate salary among a range.</p>
+
+			<p>We extract part of the data from our whole dataset and keep this part of data for testing. For validating different models’ performances, we implement cross-validation and look at their scores of accuracy and confusion matrix. And later we use our testing data to further evaluate our model by calculating the differences between the salaries predicted by our model with the salaries labeled as ground truth. If the differences is small, it means our model is successful.
+			Up to now, we have a preliminary model for our task.</p>
+		</div>
+
+		<div class="about-des">
+			<h3>Train and Test Data</h3>
+			<p>For the data we extract several CSV files from <a rel="nofollow" href="http://www.basketball-reference.com" target="_parent">BASKETBALL</a> and <a rel="nofollow" href="http://espn.go.com/nba/" target="_parent">ESPN/NBA</a>. Using 25 teams hundreds players’ specific state data from 2011-12 season to 2015-16 season associate with salary data we manually combine the data to the following format:
+			<img src="images/data.png" class="img-responsive" alt="blog img">
+			There are 16 attributes. Attribute ‘Position’ is nominal, other attributes are all numerical.
+			We use attribute ‘Salary’(player’s salary for next season) and attribute ‘SalaryCap’(The salary cap for next season) for labeling, we divide ‘Salary’ by ‘SalaryCap’ and categorize the results ranging from 5% to 30%(due to NBA salary cap) into 6 classes. If Every 5% count as one class. If the salary is smaller than 5% we let it belong to 5% and if the salary is bigger than 30% we set it 30%. </p>
+		</div>
+
+	    <div class="about-des">
+			<h3>Result</h3>
+			<img src="images/result.png" class="img-responsive" alt="about img 2">
+			<p>As the histogram shown above, the accuracy for each algorithm increases after merging label. Before merging, there are 8 classes for our data, 0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, and the accuracy for each algorithm is not so good. After analyzing, we found this is due to that players in 0% and 5% have very similar performance, and players above 20% also have very similar performance. So it's very hard to classify such classes. To address this problem, we merged all players under 10% to 5% and all players above 20% to 25%. According to the result shown in the histogram, this solution gives a much better result. And among all the algorithms, Random Forest Algorithm performs the best. So we finally use Random Forest model to make predictions. </p>
+			<img src="images/confusionmatrix.png" class="img-responsive" alt="about img 2">
+			<p>The figure Above shows the confusion matrix for each algorithm, we can see that SVM and Naive Bayes classify each sample to 5%, while kNN and Random Forest do a pretty good job.
+
+			<p>Also, we use data in 2016 for testing, the testing accuracy of our Random Forest Algorithm is 81%. </p>
+		</div>	
         
-        <p>In this project, we propose a Ring-based remote smoking activity monitoring system called RingLord. The system is an end-to-end solution consisting of a wearable sensing system, a smartphone-based gateway and an analytic engine. We imple- mented a prototype system and conducted a clinical trail, from which sensory signals while smoking and non-smoking activities were collected. Based on this dataset, We created 180 features and selected 10 most important ones to fit several classification models. The prediction performances in cross validations showed Random Forest was the best model. The overall approach demonstrated the feasibility and effectiveness of the proposed system.
-            <br/>
-        </p>
-        <p>&nbsp;</p>
-        <p><i><strong>Index Terms</strong></i><br/></p>
-        <p>
-            Mobile health, Smoking detection, Wearable sensor, Remote health monitoring, Machine learning.
-        </p>
-        <p>Cigarette smoking is one of the most pressing health issue aournd the world. According to Centers for Disease Control and Prevention (CDC) smoking causes more than 480,000 deaths each year in the United States.
-            As a mobile health class project, we aimed at exploring a mobile health solution proposal that can intervene the relapse of abstinent smokers in a timely manner. We conceived and implemented a prototype of a Ring- like wearable device (RingLord) that not only can potentially synthesize multiple sensors such as inertial sensors, gas and dust sensors, but also provides considerable convenience of practical use.
-        </p>
-    </div>
+	</div>
+</section>
 
-        <div class="image">
-        </div>
+<!-- Counter section
+================================================== -->
+<!-- <section id="counter" class="paralla-section">
+	<div class="container">
+		<div class="row">
 
+			<div class="col-md-3 col-sm-3 counter-item">	
+				<h3 class="counter-number" data-from="1" data-to="30" data-speed="3000"></h3>
+				<span class="counter-text">Teams Number</span>
+            </div> 
+            <div class="col-md-3 col-sm-3 counter-item">	
+				<h3 class="counter-number" data-from="1" data-to="5" data-speed="2000"></h3>
+				<span class="counter-text">Seasons Number</span>
+            </div>   
+            <div class="col-md-3 col-sm-3 counter-item">	
+				<h3 class="counter-number" data-from="1" data-to="600" data-speed="1000"></h3>
+				<span class="counter-text">Players Number</span>
+            </div> 
+             <div class="col-md-3 col-sm-3 counter-item">
+				<h3 class="counter-number" data-from="1" data-to="1200" data-speed="1000"></h3>
+				<span class="counter-text">Records Number</span>
+            </div> 
+              
 
+		</div>
+	</div>
+</section>
+ -->
 
+<section id="fullreport" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h5 class="wow fadeInDown" data-wow-delay="0.2s">FIND THE FULL REPORT BELOW</h5>
+				<a href="./FinalReport.pdf" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.6s">REPORT</a>
+			</div>
 
-    <div class =" body">
-        <h4 >System Architecture</h4>
-        <p>
-           RingLord is a three-tier, end-to-end remote monitoring system with extensive hardware and software components. The overall architecture is summarized in following figure. 
-            </p>
-        <p>
-           The first tier, data collection framework makes use of a set of sensing decices to do measurement. 
-            In the second part, the data is processed and transmitted to database. 
-            The last tier is a backend analytics engine capable of continuously generating statistical models and predicting outcomes using various machine learning and data mining algorithms. 
-        </p>
-    </div>
-
-    <div class="image">
-        <img src="2.jpg" alt="2" style="max-width:330px; margin-left:150px; " />
-
-    </div>
-
-
-     <div class =" body">  
-       <h4 >Process Overview</h4>
-         <div>
-             <h5>Collecting Data </h5>
-         </div>
-
-         <div class="image"> <img src="3.jpg" alt="3" style="max-width:330px; margin-left:50px; height: 236px; width: 92px;" /> <img src="4.jpg" alt="4" style="max-width:330px; margin-left:50px; height: 283px; width: 163px;" /><img src="5.jpg" alt="5" style="max-width:330px; margin-left:50px; height: 292px; width: 193px;" /><img src="6.jpg" alt="6" style="max-width:330px; margin-left:51px; height: 339px; width: 450px;" /></div>
-         <div class="image"> &nbsp;</div>
-         <div class="image"> &nbsp;</div>
-         <div class="image"> &nbsp;</div>
-
-         <div>
-             <h5>Feature Extraction</h5>
-         </div>
-        <p>
-          <i> 1) Data Segmentation:</i>
-            </p>
-         <p>
-            By discretizing time series, classification models can be easily fitted to the data.
-            we decided to slice the signals into 4-second long windows, each of which contains 40 data points. And this window width can cover most single smoking activity.
-        </p>
-            <div class="image"> <img src="7.jpg" alt="7" style="max-width:330px; margin-left:77px; height: 287px; width: 367px;" /> </div>
-        <p>
-           <i> 2) Feature Creation: </i>
-       </p>
-         <p>
-            On the sliced data set, we created aggregated features b y window.
-            By considering current window and its leading and lagging windows together, most important signal patterns will be captured rather than be ignored because of window slicing. In total, we generated 180 features.
-       </p>      
-            <div class="image"> <img src="8.jpg" alt="8" style="max-width:330px; margin-left:72px; height: 291px; width: 549px;" /> </div>
-        
-        <p>
-           <i> 3) Feature Selection: </i>
-        </p>
-         <p>
-            Too many features doesn’t necessar- ily lead to good predictive power of classification model. 
-             In order to find those features that contain most information for classification, we employed a tree-based classification model (Gradient Boosting) that identified the relative importance of all features.
-        </p>
-
-          <div class="image"> <img src="9.jpg" alt="9" style="max-width:330px; margin-left:50px; height: 269px; width: 256px;" /> 
-              <img src="10.jpg" alt="10" style="max-width:330px; margin-left:50px; height: 280px; width: 475px;" /></div>
-         <div class="image"> &nbsp;</div>
-        <div class="image"> <img src="11.jpg" alt="11" style=" margin-left:103px; height: 200px; width: 550px;" /> </div>
+		</div>
+	</div>		
+</section>
 
 
-         <div>
-             <h5>Model Training</h5>
-         </div>
-        <p>
-            Data were collected from 2 smokers and 2 non- smokers. To avoid data corruption, we did the experiment in a windless environment. Each tester smoked 3 cigarettes. When there is a hand-to-mouth smoking action, they need to press the ”start” button in the App accordingly to label the data in that time interval. 
-           <br/>
-        </p>
-         <p>
-             We also asked them to walk around and let their arms swing back and forth. Finally, we collected data from similar actions, like drinking, to make the experiment more solid and convincing. With all the collected data, the results are then computed using ten-fold cross validation to guard against overfitting given the relatively small number of instances.
-        <br/>
-        </p>
-         <p>
-            We fitted 4 different classification model to the data set with 10 features: Gradient Boosting Tree, AdaBoost Tree, Random Forest and Support Vector Machines.
-            <br/>
-            Scikit-learn (version 0.17) was used to train the models and make predictions. 
-            10-folded cross validation was used to select parameters of these models.
-           <br/>
-        </p>
-         <p>
-             Limited to time and resource of the class project, the training dataset we got from the clinical trial had only 876 windows and limited number of interfering activity data that help give more credentials to the models’ predicting and dif- ferentiating power. Conducting more systematical experiments and obtaining larger training and test datasets are needed in future work.
-        </p>
-         <div class="image"> <img src="12.jpg" alt="13" style="max-width:330px; margin-left:150px;" /> </div>
-           <div>
-             <h5>Deployment</h5>
-         </div>
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
 
-         <div class="image"> <img src="13.jpg" alt="13" style="margin-left:48px; height: 225px; width: 750px;" /> </div>
-         <div>
-         <p>
-          <strong>Conculusion</strong>
-            Mobile phones can play a major role in detecting and preventing harmful user behavior, such as smoking. So far, we have introduced the design and implementation of a Ring-based remote smoking monitoring system called
-             RingLord. The system is an end-to-end solution consisting of three parts: 1)a RFduino-based hardware sensing system that can measure and transmit data via Bluetooth 4.0, 2)a smartphone-based gateway that wirelessly collects data sets from the hardware devices and upload them into MySQL database, 3).an analytic engine capable of real-time prediction using machine learning and data mining algorithms.
-             <br/>
-             Using real data collected from a clinical trial, we have demonstrated the effectiveness of RingLords analytic engine by accurately predicting if there is a smoking activity happen- ing. 
-            <br/>
-              But the system still has several limitations. 
-            <br/>
-             One possible direction is to do more clinical trials. Then based on the new data we collect, we can use different data processing and feature extraction methods to do prediction.
-        </p>
-        </div>
-    </div>
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+				<h2>Project Source Code</h2>
+				<p> Source Code could be viewed from Github <a rel="nofollow" href="https://github.com/coconutzzzz/349FinalProject" target="_parent">Click Here</a></p>
+			</div>
 
-    <div class =" body">
-        <h4 >Demo</h4>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FrO5gTIsrrc" frameborder="0" allowfullscreen></ifram></iframe>
-        </div>
+		</div>
+	</div>
 
+	<div class="col-md-12 col-sm-12">
+		<div class="copyright-text wow bounceIn">
+			
+		</div>
+	</div>
 
-    </div>
+</footer>
 
-    <div class =" body">
-        <h4  >Reference</h4>
-        <p>
-           1. Rigotti, Nancy A. Strategies to help a smoker who is struggling to quit, JAMA 308 (15): 15731580. doi:10.1001/jama.2012.13043. ISSN 1538- 3598. PMID 23073954. Retrieved 2015-05-09.
-           </p>
-        <p>
-            2. Secker-Walker RH, Gnich W, Platt S, Lancaster T. Community inter- ventions for reducing smoking among adults, Cochrane Database Syst Rev (3): CD001745. doi:10.1002/14651858.CD001745. PMID 12137631. Retrieved 2015-05-09.
-        </p>
-        <p>
-            3. P. Lopez-Meyer, S. Tiffany, Y. Patil and E. Sazonov. Monitoring of Cigarette Smoking Using Wearable Sensors and Support Vector Machines, IEEE Transactions on Biomedical Engineering (Volume:60, Issue: 7). IEEE, July 2013.
-           </p>
-        <p style="font-size: medium; font-style: normal">
-            4. Y. Patil, P. Lopez-Meyer, S. Tiffany, E. Sazonov. Detection of cigarette smoke inhalations from respiratory signals using reduced feature set, Information Processing in Sensor Networks (IPSN), 2012 ACM/IEEE 11th International Conference on IEEE, July 2013.
-        </p>
-        <p style="font-size: medium; font-style: normal">
-            &nbsp;</p>
-        <p style="font-size: medium; font-style: normal">
-            &nbsp;</p>
-        <p style="font-size: medium; font-style: normal">
-            &nbsp;</p>
-        <p style="font-size: medium; font-style: normal">
-            &nbsp;</p>
-
-    </div>
+<!-- Javascript 
+================================================== -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
